@@ -1,4 +1,6 @@
 
+/******************* global ***********************/
+/***************************************************/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +14,8 @@ body {
   /* line-height: 1.5px; */
 }
 
+/******************* header ***********************/
+/***************************************************/
 .app {
   font-weight: 400;
 }
@@ -185,37 +189,12 @@ body {
   padding-right: 0.3em;
 }
 
-.dropdown {
-  position: relative;
-  color: black;
-  font-size: 0.85em;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 250px;
-  overflow: auto;
-  z-index: 1;
-  border-radius: 5px;
-  margin-top: 5px;
-  left: -100px;
-  border: 0.5px solid black;
- }
-
-.show {
-  display: block;
-   }
 /******************* sidebar ***********************/
 /***************************************************/
 nav img {
   width: 30px;
   height: 30px;
-  /* margin-top: 15px;
-  margin-bottom: 30px; */
-  /* display: block; */
-   }
+}
 
 ul {
   display: flex;
@@ -223,9 +202,6 @@ ul {
   flex-direction: row;
   align-items: center;
   background-color: #2e4568;
-  /*grid-area: aside; */
-  /* position: fixed; */
-  /* width: 70px; */
   padding: 15px;
 }
 
@@ -233,12 +209,7 @@ li{
   list-style-type: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -263,7 +234,7 @@ ul li {
 
 .show {
   display: block;
-}
+} */
 
 /******************* search***********************/
 /***************************************************/
@@ -311,6 +282,8 @@ h4{
   right: 25px;
 }
 
+/******************* alert ***********************/
+/***************************************************/
 .alert {
   padding: 15px;
   background-color: #2e4568;
@@ -339,6 +312,8 @@ h4{
   color: black;
  }
 
+ /******************* charts ***********************/
+ /***************************************************/
 .chart-container{
   border: 1px solid #bebebe;
   /* margin: 2em; */
@@ -392,6 +367,8 @@ div .hourly-active{
    /* margin: auto; */
  }
 
+ /******************* social stats ***********************/
+ /***************************************************/
 .title{
   margin-top: 1.5em;
 }
@@ -447,11 +424,13 @@ div .hourly-active{
  }
 
 .text p {
-    color: black;
+    color: grey;
     font-size: 40px;
     padding-right: .5em;
  }
 
+ /******************* new members/recent activity ***/
+ /***************************************************/
 .box-row {
   /* margin-top: 1em; */
   display: flex;
@@ -493,6 +472,8 @@ a {
   font-size: 1em;
 }
 
+/******************* form ***********************/
+/***************************************************/
 #search-user-field{
   width: 100%;
   padding: 8px;
@@ -542,6 +523,8 @@ div.message-submit{
   text-align: center;
 }
 
+/******************* settings ***********************/
+/***************************************************/
 #timezone{
   border: 1px solid #b2b2b2;
   width: 90%;
@@ -600,8 +583,13 @@ div.message-submit{
   margin-bottom: 4em;
 }
 
-
+/******************* mq ***********************/
+/*********************************************/
 @media(min-width:768px) {
+  .traffic-options a {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
   .chart-container{
     border: none;
   }
@@ -627,13 +615,14 @@ div.message-submit{
   .form-container{
     width: 50%;
     border: 0.5px solid #d1d1d1;
-        border-radius: 5px;
-        margin-top: 2em;
-        padding-bottom: 42px;
+    border-radius: 5px;
+    margin-top: 2em;
+    padding-bottom: 42px;
   }
   .widget-container{
     width: 50%;
   }
+
 ul {
   display: flex;
   flex-direction: column;
@@ -702,8 +691,9 @@ padding-top: 2em;
 }
 
 @media(min-width:1024px) {
-  body{
-    /* max-width: 1024px; */
-    margin: auto;
+  .alert{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
  }
 }
