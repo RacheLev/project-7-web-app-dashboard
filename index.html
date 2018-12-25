@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web App Dashboard</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css\on-off-widget.css">
+  <link rel="stylesheet" href="css\grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="grid-container">
+
+    <header>
+        <div class="header-wrapper">
+          <!-- <div class="logo-container"> -->
+          <h3 class="logo">Your<span class="app">App&trade;</span></h3>
+        <!-- </div> -->
+
+          <div class="right-side">
+            <div class="dropdown">
+              <div class="bell-container">
+
+                 <svg version="1.1" class="bell-icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <style type="text/css">
+                	.st0{fill:#FFFFFF;}
+                </style>
+                <g id="_x36__6_">
+                	<g>
+                		<path class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                			c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
+                	</g>
+                </g>
+                </svg>
+
+                <a><span class="green-dot">
+                <mark></mark></span></a>
+                </div>
+                <div id="bell-messages" class="dropdown-content">
+                 <ul>
+                   <li>2 new members</li>
+                   <li>1 new message</li>
+                   <li>3 new message</li>
+                 </ul>
+                </div>
+            </div>
+  </div>
+            <div class="profile-image"><img class="profile-pic" src="images/member-2.jpg" alt="Avatar"></div>
+            <h5 class="avatar-name">Dale Byrd</h5>
+          </div>
+
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><img src="icons/icon-dashboard.svg" alt="Dashboard"></li>
+      <li><img src="icons/icon-members.svg" alt="Members"></li>
+      <li><img src="icons/icon-visits.svg" alt="Visits"></li>
+      <li><img src="icons/icon-settings.svg" alt="Settings"></li>
+    </ul>
+  </nav>
+
+  <div class="search-container">
+<h4>Dashboard</h4>
+<div class="search">
+  <span class="fa fa-search"></span>
+  <input placeholder="Search">
+</div>
+</div>
+
+
+<div class="alert">
+  <strong>Alert</strong> Nullam quis risus eget urna mollis ornare vel eu leo.
+<a href="#"><span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>&times;</span>
+</a></div>
+
+
+<div class="chart-container traffic-container" style="position: relative; width:80vw">
+<div class="flex-title">
+  <h5 class="traffic">TRAFFIC</h5>
+  <div class="traffic-options">
+    <a href="#" class="hourly-active">Hourly</a>
+    <a href="#">Daily</a>
+    <a href="#">Weekly</a>
+    <a href="#">Monthly</a>
+  </div>
+  </div>
+  <div>
+  <canvas id="myChart"></canvas>
+</div>
+</div>
+
+<div class="daily-mobile">
+<div class="chart-container daily-traffic-container flex" style="position: relative;">
+  <h5 class="traffic">DAILY TRAFFIC</h5>
+  <canvas id="myChart2"></canvas>
+</div>
+
+
+<div class="chart-container mobile-users-container flex" style="position: relative;">
+  <h5 class="traffic">MOBILE USERS</h5>
+  <canvas id="myChart3"></canvas>
+</div>
+</div>
+
+
+
+
+<div class="social-stats">
+              <h5 class="title traffic">Social stats</h5>
+              <div class="social-icons">
+                <div class="social-icon">
+                  <div class="icon">
+                    <img src="icons/icon-twitter.svg" alt="Twitter">
+                  </div>
+                  <div class="text">
+                    <h3><strong>Twitter</strong></h3>
+                    <p> 10,345</p>
+                  </div>
+                </div>
+                <div class="social-icon">
+                  <div class="icon">
+                    <img src="icons/icon-facebook.svg" alt="Facebook">
+                  </div>
+                  <div class="text">
+                    <h3><strong>Facebook</strong></h3>
+                    <p>8,739</p>
+                  </div>
+                </div>
+                <div class="social-icon">
+                  <div class="icon">
+                    <img src="icons/icon-google-plus.svg" alt="Google-plus">
+                  </div>
+                  <div class="text">
+                    <h3><strong>Google+</strong></h3>
+                    <p>2,530</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- new members -->
+<div class="members-activity-container">
+<div class="new-members">
+             <h5 class="title traffic">New members</h5>  <br>
+               <div class="container">
+               <div class="box-row">
+               <img class="avatar" src="images/member-1.jpg" alt="Victoria">
+               <div class="flex-left">
+                 <div>
+                   <h5>Victoria Chambers</h5>
+                   <a href="#">victoria80@exemple.com</a>
+                 </div>
+                 <span class="date">10/15/15</span>
+               </div>
+             </div>
+             <div class="box-row">
+               <img class="avatar" src="images/member-2.jpg" alt="Victoria">
+               <div class="flex-left">
+                 <div>
+                   <h5>Dale Byrd</h5>
+                   <a href="#">dale.byrd52@exemple.com</a>
+                 </div>
+               <span class="date">10/15/15</span>
+               </div>
+             </div>
+               <div class="box-row">
+               <img class="avatar" src="images/member-3.jpg" alt="Victoria">
+               <div class="flex-left">
+                 <div>
+                   <h5>Dawn Wood</h5>
+                   <a href="#">dawn.wood.16@exemple.com</a>
+                 </div>
+               <span class="date">10/15/15</span>
+               </div>
+             </div>
+               <div class="box-row">
+               <img class="avatar" src="images/member-4.jpg" alt="Victoria">
+               <div class="flex-left">
+                 <div>
+                   <h5>Dan Oliver</h5>
+                   <a href="#">dan.oliver82@exemple.com</a>
+                 </div>
+               <span class="date">10/15/15</span>
+               </div>
+             </div>
+           </div>
+           </div>
+<!--Recent activty  -->
+           <div class="recent-activity">
+           <h5 class="title traffic">Recent activity</h5> <br>
+           <div class="container">
+             <div class="box-row">
+             <img class="avatar" src="images/member-1.jpg" alt="Victoria">
+             <div class="flex-left">
+               <div>
+                 <h5>Victoria Chambers commented on YourApp's SEO Tips <br> 4 hours ago</h5>
+               </div>
+             </div>
+             <span class="arrow">></span>
+           </div>
+           <div class="box-row">
+             <img class="avatar" src="images/member-2.jpg" alt="Victoria">
+             <div class="flex-left">
+               <div>
+                 <h5>Dale Byrd like the post Facebook's Changes for 2016 <br> 5 hours ago </h5>
+               </div>
+             </div>
+             <span class="arrow">></span>
+           </div>
+             <div class="box-row">
+             <img class="avatar" src="images/member-3.jpg" alt="Victoria">
+             <div class="flex-left">
+               <div>
+                 <h5>Dawn Wood commented on Facebook's Changes for 2016 <br>5 hours ago </h5>
+               </div>
+             </div>
+             <span class="arrow">></span>
+           </div>
+             <div class="box-row">
+             <img class="avatar" src="images/member-4.jpg" alt="Victoria">
+             <div class="flex-left">
+               <div>
+                 <h5>Dan Oliver posted YourApp's SEO Tips <br> 1 day ago </h5>
+               </div>
+             </div>
+             <span class="arrow">></span>
+           </div>
+         </div>
+           </div>
+         </div>
+
+
+           <!-- message users container -->
+           <div class="form-setting-container">
+          <div class="form-container" id="message-user">
+            <h5 class="title traffic">Message Users</h5>
+
+            <!-- message text inputs -->
+            <div class="input-search">
+              <input type="text" name="searchForUser" id="search-user-field" placeholder="Search for user">
+            </div>
+            <textarea name="message-user" id="message-user-field" placeholder="Message for user" rows="6"></textarea>
+
+            <!-- send button -->
+            <div class="message-submit">
+              <button id="message-submit" class="send-button" type="submit">Send</button>
+            </div>
+          </div>
+
+
+          <!-- settings container -->
+          <div class="widget-container" id="settings">
+            <h3 class="title traffic">Settings</h3>
+            <div class="notifications">
+  <p>Send email notifications</p>
+
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+</div>
+    <div class="notifications">
+<p>Set profile to public</p>
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+
+</div>
+
+<!-- dropdown menu -->
+<select id="timezone">
+  <option value='default'>Please choose a timezone</option>
+  <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+   <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+   <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+   <option value="US/Alaska">(GMT-09:00) Alaska</option>
+   <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+   <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+   <option value="US/Arizona">(GMT-07:00) Arizona</option>
+</select>
+
+            <!-- save and cancel buttons -->
+            <div class="buttons-container">
+              <button class="button-confirm" type="button" id="save-pref-button">Save</button>
+              <button class="button-cancel" type="button" id="cancel-pref-button">Cancel</button>
+            </div>
+
+          </div>
+          </div>
+      </main>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/script.js"></script>
+</div>
+</body>
+
+
+
+
+</html>
