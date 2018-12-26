@@ -292,9 +292,9 @@ h4{
   color: white;
   border-radius: 5px;
   width:80%;
-  margin-left: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-left: 80px; */
+  margin: 20px auto;
+  /* margin-bottom: 20px; */
 }
 
 #close {
@@ -635,7 +635,7 @@ ul {
   width: 70px;
   height: 100vh;
   justify-content: flex-start;
-  top: 0px;
+  top: 70px;
   z-index: -1000;
 }
 
@@ -675,14 +675,12 @@ nav img {
  /* display: block; */
 }
 
-.alert {
-margin-left: 14%;
- }
- .mobile-users-container{
+.mobile-users-container{
    width: 30vw;
    max-height: 600px;
  }
- .daily-traffic-container{
+
+.daily-traffic-container{
    width: 50vw;
    max-height: 600px;
  }
@@ -692,14 +690,15 @@ margin-left: 14%;
   border-right:0.5px solid #d1d1d1;
   padding-right: 2em;
 }
+
 #myChart2{
 padding-top: 2em;
 }
 
 @media(min-width:1024px) {
   .alert{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 1em;
+    /* width: 60%; */
+    /* margin: 0 auto; */
+    margin-top: 2em;
  }
 }
