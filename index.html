@@ -244,13 +244,15 @@
 
             <!-- message text inputs -->
             <div class="input-search">
-              <input type="text" name="searchForUser" id="search-user-field" placeholder="Search for user">
+              <input type="text" name="searchForUser" id="search-user-field" placeholder="Search for user" required>
             </div>
-            <textarea name="message-user" id="message-user-field" placeholder="Message for user" rows="6"></textarea>
+            <textarea name="message-user" id="message-user-field" placeholder="Message for user" rows="6" required></textarea>
 
             <!-- send button -->
             <div class="message-submit">
               <button id="message-submit" class="send-button" type="submit">Send</button>
+              <div id="messageConfirm"> <p>The message was sent!</p></div>
+            <div id="messageError"> <p>Please fill out all message details.</p></div>
             </div>
           </div>
 
@@ -296,22 +298,25 @@
             <!-- save and cancel buttons -->
             <div class="buttons-container">
               <button class="button-confirm" type="button" id="save-pref-button">Save</button>
-              <button class="button-cancel" type="button" id="cancel-pref-button">Cancel</button>
-            </div>
 
+              <button class="button-cancel" type="button" id="cancel-pref-button">Cancel</button>
+
+            </div>
+<div id="saveConfirm"> <p>settings saved!</p></div>
           </div>
           </div>
           </main>
           </div>
 
-
-
-
-
+          <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="js/charts.js"></script>
 <script src="js/script.js"></script>
+<script src="js/jquery.js"></script>
 </div>
 </body>
 

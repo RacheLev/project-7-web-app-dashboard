@@ -373,6 +373,7 @@ div .hourly-active{
  /***************************************************/
 .title{
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
  .social-icons {
@@ -564,7 +565,7 @@ div.message-submit{
   font-style: normal;
   border-radius: 5px;
   border: 1px solid #fff;
-  margin-bottom: 2em;
+  /* margin-bottom: 1em; */
   cursor: pointer;
 }
 .button-cancel{
@@ -584,7 +585,21 @@ div.message-submit{
 .form-setting-container{
   margin-bottom: 4em;
 }
-
+#messageConfirm p,
+#messageError p,
+#saveConfirm {
+  background-color: #d6b44f;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 0px;
+}
+#saveConfirm {
+  padding: 5px;
+width: 85%;
+}
 /******************* mq ***********************/
 /*********************************************/
 @media(min-width:768px) {
@@ -616,16 +631,21 @@ div.message-submit{
     flex-direction: row;
     padding-left: 5%;
     align-items: baseline;
+    border-top: solid #d1d1d1 .5px;
+    margin-top: 2em;
   }
   .form-container{
     width: 50%;
-    border: 0.5px solid #d1d1d1;
+    /* border: 0.5px solid #d1d1d1; */
     border-radius: 5px;
     margin-top: 2em;
     padding-bottom: 42px;
   }
   .widget-container{
     width: 50%;
+    padding-bottom: 36px;
+    border-left: solid #d1d1d1 .5px;
+    padding-left: 35px;
   }
 
 ul {
