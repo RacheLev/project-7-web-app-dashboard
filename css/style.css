@@ -26,6 +26,8 @@ body {
   flex-direction: row;
   align-items: center;
   background-color: #47699b;
+  padding:.5em;
+  margin-bottom: 1em;
 }
 
 .logo {
@@ -246,7 +248,7 @@ ul li {
 }
 
 h4{
-  margin-left: 5%;
+  margin-left: 10px;
   margin-right: 2%;
   color: grey;
   font-size: 1.2em;
@@ -586,6 +588,9 @@ div.message-submit{
 /******************* mq ***********************/
 /*********************************************/
 @media(min-width:768px) {
+  .search{
+    padding-left: 50%;
+  }
   .traffic-options a {
     padding-right: 2em;
     padding-left: 2em;
@@ -630,7 +635,8 @@ ul {
   width: 70px;
   height: 100vh;
   justify-content: flex-start;
-  top: 53px;
+  top: 0px;
+  z-index: -1000;
 }
 
 .daily-mobile{
@@ -658,7 +664,7 @@ ul {
 }
 
 h4{
-  margin-left: 12%;
+  margin-left: 80px;
 }
 
 nav img {
