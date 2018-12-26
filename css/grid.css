@@ -6,15 +6,15 @@
   grid-auto-rows: 70px 80px;
   grid-template-areas:
     "header header header"
-    "sidebar search search"
-    "sidebar main main"
-    "sidebar daily-traffic daily-traffic"
+    "sidebar sidebar sidebar"
+    "main main main"
+    /* "sidebar daily-traffic daily-traffic"
     "sidebar mobile-users mobile-users"
     "sidebar social-stats social-stats"
     "sidebar new-members new-members"
     "sidebar recent-activity recent-activity"
     "sidebar message message"
-    "sidebar settings settings";
+    "sidebar settings settings"; */
 }
 
 header{
