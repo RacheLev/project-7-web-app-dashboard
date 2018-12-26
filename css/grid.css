@@ -7,7 +7,7 @@
   grid-template-areas:
     "header header header"
     "sidebar search search"
-    "sidebar traffic traffic"
+    "sidebar main main"
     "sidebar daily-traffic daily-traffic"
     "sidebar mobile-users mobile-users"
     "sidebar social-stats social-stats"
@@ -23,13 +23,13 @@ header{
 nav{
   grid-area: sidebar;
 }
-main:
+main{
 grid-area: main;
 }
 .search-container{
   grid-area: search;
 }
-.traffic-container{
+/* .traffic-container{
   grid-area: traffic;
 }
 .daily-traffic-container{
@@ -52,4 +52,4 @@ grid-area: main;
 }
 #settings {
   grid-area:settings;
-}
+} */
