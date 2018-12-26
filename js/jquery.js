@@ -8,7 +8,7 @@ $("#message-submit").click(function(){
 
 $("#saveConfirm").hide();
 $("#save-pref-button").click(function(){
-$("#saveConfirm").show();
+$("#saveConfirm").fadeIn().delay(3000).fadeOut();
 
-    
+
 });

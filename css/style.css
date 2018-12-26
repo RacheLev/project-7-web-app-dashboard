@@ -355,6 +355,7 @@ div .hourly-active{
    font-weight: lighter;
    text-align: center;
    text-transform: uppercase;
+   margin-bottom: 2em;
  }
 
  /* #myChart,
@@ -373,7 +374,7 @@ div .hourly-active{
  /***************************************************/
 .title{
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 3em;
 }
 
  .social-icons {
@@ -603,6 +604,11 @@ width: 85%;
 /******************* mq ***********************/
 /*********************************************/
 @media(min-width:768px) {
+  .box-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .search{
     padding-left: 50%;
   }
@@ -624,6 +630,7 @@ width: 85%;
    }
    .recent-activity{
      width: 50%;
+     /* border-left: solid #d1d1d1 .5px; */
    }
   .form-setting-container{
     display: flex;
@@ -701,14 +708,11 @@ nav img {
  }
 
 .daily-traffic-container{
-   width: 50vw;
-   max-height: 600px;
- }
-
-.daily-traffic-container {
+  width: 50vw;
+  max-height: 600px;
   padding-bottom: 8em;
   border-right:0.5px solid #d1d1d1;
-  padding-right: 2em;
+  padding-right: 2.8em;
 }
 
 #myChart2{
